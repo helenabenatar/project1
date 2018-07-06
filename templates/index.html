@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+{% block body %}
+        <hr color="red" width=100% align="right" size="7">
+        <hr color="blue" width=90% align="right" size="7">
+        <hr color="green" width=80% align="right" size="7">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Ivy_League_logo.svg/200px-Ivy_League_logo.svg.png">
+        <hr color="green" width=80% align="left" size="7">
+        <hr color="blue" width=90% align="left" size="7">
+        <hr color="red" width=100% align="left" size="7">
+
+        <p>
+The Ivy League is a collegiate athletic conference comprising sports teams from eight private universities in the Northeastern United States. The conference name is also commonly used to refer to those eight schools as a group beyond the sports context. The eight members are Brown University, Columbia University, Cornell University, Dartmouth College, Harvard University, the University of Pennsylvania, Princeton University, and Yale University. The term Ivy League has connotations of academic excellence, selectivity in admissions, and social elitism.
+        </p><br><br>
+
+        <header> Ivy Universities</header><br>
+
+        <table border=3 align=center>
+        	<tr>
+        		<th> Logo </th>
+        		<th>University </th>
+        		<th>Location</th>
+        		<th>Year founded</th>
+        		<th>Team</th>
+        	</tr>
+        	<tr>
+        	    <td> <a href="https://es.wikipedia.org/wiki/Universidad_Brown"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Brown_Bears_wordmark.png/20px-Brown_Bears_wordmark.png" width="15" height="15" align="center">  </a></td>
+        		<td> Brown University</td>
+        		<td> Providence, Rhode Island </td>
+        		<td> 1764</td>
+        		<td>Bears </td>
+        	</tr>
+        	<tr>
+        		<td> <a href="https://es.wikipedia.org/wiki/Universidad_de_Columbia"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Columbia_Lions_wordmark.png/60px-Columbia_Lions_wordmark.png" width="40" height="15" align="center"> </a></td>
+        		<td> Columbia University</td>
+        		<td> New York, New York </td>
+        		<td> 1754</td>
+        		<td>Lions </td>
+            </tr>
+        	<tr>
+        	<td> <a href="https://es.wikipedia.org/wiki/Universidad_Cornell"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Cornell_%22C%22_wordmark.png/20px-Cornell_%22C%22_wordmark.png" width="15" height="15"></a> </td>
+                <td> Cornell University</td>
+        		<td> Ithaca, New York </td>
+        		<td>1865</td>
+        		<td>Big Red </td>
+            </tr>
+            <tr>
+        		<td> <a href="https://es.wikipedia.org/wiki/Dartmouth_College"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Dartmouth_Big_Green_logo.svg/50px-Dartmouth_Big_Green_logo.svg.png" width="35" height="15"> </a></td>
+        		<td> Dartmouth College</td>
+        		<td>Hanover, New Hampshire </td>
+        		<td> 1769</td>
+        		<td>Big Green </td>
+            </tr>
+        	<tr>
+        	  	<td> <a href="https://es.wikipedia.org/wiki/Universidad_de_Harvard"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Harvard_Crimson_logo.svg/25px-Harvard_Crimson_logo.svg.png" width="15" height="15"> </a></td>
+        		<td> Harvard University</td>
+        		<td>Cambridge, Massachusetts </td>
+        		<td> 1636</td>
+        		<td>Crimson </td>
+            </tr>
+            	<tr>
+        		<td> <a href="https://es.wikipedia.org/wiki/Universidad_de_Pensilvania"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Penn_Quakers_wordmark.png/20px-Penn_Quakers_wordmark.png" width="15" height="15"> </a></td>
+        		<td> University of Pensilvania</td>
+        		<td>Filadelfia, Pensilvania </td>
+        		<td> 1740</td>
+        		<td>Quakers </td>
+            </tr>
+            	<tr>
+    			<td> <a href="https://es.wikipedia.org/wiki/Universidad_Yale"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yale_Bulldogs_script.svg/20px-Yale_Bulldogs_script.svg.png" width="15" height="15"></a> </td>
+        		<td> Yale University</td>
+        		<td> New Haven, Connecticut </td>
+        		<td> 1701</td>
+        		<td>Bulldogs </td>
+            </tr>
+            <tr>
+            	<td> <a href="https://es.wikipedia.org/wiki/Universidad_de_Princeton"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Princeton_Tigers_logo.png/20px-Princeton_Tigers_logo.png" width="15" height="15"></a> </td>
+        		<td> Princeton University</td>
+        		<td>Princeton, New Jersey </td>
+        		<td> 1746</td>
+        		<td>Tigers </td>
+            </tr>
+        </table> <br><br><br>
+        To visit each university's website, click on their logo.<br>
+<br><br>
+
+        <header> LINKS </header>
+
+        <a href="harvard.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Harvard_shield_wreath.svg/180px-Harvard_shield_wreath.svg.png">
+        </a>
+        <p> To read about Harvard University click the picture above</p>
+
+        <a href="yale.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Yale_University_Shield_1.svg/150px-Yale_University_Shield_1.svg.png">
+        </a>
+        <p> To read about Yale University click the picture above</p>
+
+        <a href="brown.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Brown_University_coat_of_arms.svg/110px-Brown_University_coat_of_arms.svg.png">
+        </a>
+        <p> To read about Brown University click the picture above</p> <br><br><br>
+
+
+        <header> Survey</header><br>
+        <form action="/submit" method="post">
+            Name: <input name="name" placeholder="Name" type="text"/> <br>
+            Last name: <input name="lastname" placeholder="Name" type="text"/> <br><br>
+        <p> Which university do you think suits you best?:</p>
+        <select name="university">
+        <option disabled selected value="">University</option>
+        <option value="Brown">Brown University</option>
+        <option value="Columbia">Columbia University</option>
+        <option value="Cornell">Cornell University</option>
+        <option value="Dartmouth">Dartmouth College</option>
+        <option value="Harvard">Harvard University</option>
+        <option value="Pennsylvania">University of Pennsylvania</option>
+        <option value="Yale">Yale University</option>
+        <option value="Princeton">Princeton University</option>
+    </select>
+    <input type="submit" value="Submit"/>
+    </form>
+{% endblock %}
